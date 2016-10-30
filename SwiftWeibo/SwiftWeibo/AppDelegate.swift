@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 设置全局UITabBar的样式
         UITabBar.appearance().tintColor = UIColor.orange
         
+        // 设置全局UINavigationBar的样式
+        UINavigationBar.appearance().tintColor = UIColor.orange
+        
         // 设置window的大小为屏幕大小
         window = UIWindow(frame: UIScreen.main.bounds)
         
