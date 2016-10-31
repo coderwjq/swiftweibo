@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */; };
+		294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPresentationController.swift; sourceTree = "<group>"; };
+		294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPopoverAnimator.swift; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				29DB4A7C1DC2FB40003E1E2A /* HomeViewController.swift */,
 				29DC90101DC635ED00527751 /* PopoverViewController.swift */,
+				294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				29DC90111DC635ED00527751 /* PopoverViewController.xib */,
+				294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */,
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
 				29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */,
@@ -379,6 +386,7 @@
 				29DC90061DC61FB900527751 /* VisitorView.swift in Sources */,
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
+				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

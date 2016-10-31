@@ -43,7 +43,7 @@ class VisitorView: UIView {
         rotationAnim.repeatCount = MAXFLOAT
         rotationAnim.duration = 10.0
         
-        // 设置是否在动画完成时移除动画
+        // 设置是否在界面消失时移除动画
         rotationAnim.isRemovedOnCompletion = false
         
         // 添加动画
