@@ -12,3 +12,4 @@ end
 pod 'AFNetworking'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
+pod 'SnapKit'
