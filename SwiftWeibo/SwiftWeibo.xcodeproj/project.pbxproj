@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D451DC8443F00A85D99 /* NetworkTools.swift */; };
+		290B8D491DC84A2F00A85D99 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D471DC84A2F00A85D99 /* OAuthViewController.swift */; };
+		290B8D4A1DC84A2F00A85D99 /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290B8D481DC84A2F00A85D99 /* OAuthViewController.xib */; };
+		290B8D4C1DC867C400A85D99 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D4B1DC867C400A85D99 /* Const.swift */; };
+		290B8D4E1DC873CF00A85D99 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D4D1DC873CF00A85D99 /* UserAccount.swift */; };
 		294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */; };
 		294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		22119D56AF1D3191555F4BA9 /* Pods-SwiftWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		290B8D451DC8443F00A85D99 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		290B8D471DC84A2F00A85D99 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		290B8D481DC84A2F00A85D99 /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
+		290B8D4B1DC867C400A85D99 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		290B8D4D1DC873CF00A85D99 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAccount.swift; path = SwiftWeibo/Classes/Others/UserAccount.swift; sourceTree = SOURCE_ROOT; };
 		294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPresentationController.swift; sourceTree = "<group>"; };
 		294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPopoverAnimator.swift; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +216,7 @@
 		29DB4A701DC2EF23003E1E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				290B8D4D1DC873CF00A85D99 /* UserAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +226,8 @@
 			children = (
 				29DC90051DC61FB900527751 /* VisitorView.swift */,
 				29DC90071DC6203900527751 /* VisitorView.xib */,
+				290B8D471DC84A2F00A85D99 /* OAuthViewController.swift */,
+				290B8D481DC84A2F00A85D99 /* OAuthViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +309,7 @@
 			children = (
 				29DC900A1DC6311500527751 /* Category */,
 				29DC900B1DC6311500527751 /* Tools */,
+				290B8D4B1DC867C400A85D99 /* Const.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -312,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				29DC900E1DC632D600527751 /* TitleButton.swift */,
+				290B8D451DC8443F00A85D99 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -387,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290B8D4A1DC84A2F00A85D99 /* OAuthViewController.xib in Resources */,
 				29DC90131DC635ED00527751 /* PopoverViewController.xib in Resources */,
 				29DB4A861DC322AA003E1E2A /* MainVCSettings.json in Resources */,
 				29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */,
@@ -449,17 +465,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */,
 				294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */,
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
+				290B8D491DC84A2F00A85D99 /* OAuthViewController.swift in Sources */,
 				29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */,
 				29DB4A7F1DC2FB4D003E1E2A /* MessageViewController.swift in Sources */,
 				29DB4A7D1DC2FB40003E1E2A /* HomeViewController.swift in Sources */,
+				290B8D4E1DC873CF00A85D99 /* UserAccount.swift in Sources */,
 				29DC90041DC61F5900527751 /* BaseViewController.swift in Sources */,
 				29DB4A811DC2FB5A003E1E2A /* DiscoverViewController.swift in Sources */,
 				29DC90121DC635ED00527751 /* PopoverViewController.swift in Sources */,
 				29DC90061DC61FB900527751 /* VisitorView.swift in Sources */,
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
+				290B8D4C1DC867C400A85D99 /* Const.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
 				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
 			);
@@ -486,6 +506,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -535,6 +556,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -567,7 +589,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = F99DNARY2N;
 				INFOPLIST_FILE = SwiftWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzzdxt.SwiftWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +605,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = F99DNARY2N;
 				INFOPLIST_FILE = SwiftWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzzdxt.SwiftWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
