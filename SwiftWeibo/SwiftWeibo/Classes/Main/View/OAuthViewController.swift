@@ -43,6 +43,8 @@ extension OAuthViewController {
         // 获取登录页的URLString
         let urlString = "\(url_oauth_page)?client_id=\(app_key)&redirect_url=\(redirect_uri)"
         
+        print(urlString)
+        
         // 创建对应的URL
         guard let url = URL(string: urlString) else {
             print("创建NSUrl失败")

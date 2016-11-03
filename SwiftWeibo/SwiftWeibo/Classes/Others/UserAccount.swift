@@ -47,4 +47,24 @@ class UserAccount: NSObject {
     override var description: String {
         return dictionaryWithValues(forKeys: ["access_token", "expires_date", "uid", "screen_name", "avatar_large"]).description
     }
+    
+    // MARK:- 归档&解档
+    // 归档的方法
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(access_token, forKey: "access_token")
+        aCoder.encode(uid, forKey: "uid")
+        aCoder.encode(expires_date, forKey: "expires_date")
+        aCoder.encode(avatar_large, forKey: "avatar_large")
+        aCoder.encode(screen_name, forKey: "screen_name")
+    }
+    
+    // 解档的方法
+    required init?(coder aDecoder: NSCoder) {
+        access_token = aDecoder.decodeObject(forKey: "access_token") as? String
+        uid = aDecoder.decodeObject(forKey: "uid") as? String
+        expires_date = aDecoder.decodeObject(forKey: "expires_date") as? Date
+        avatar_large = aDecoder.decodeObject(forKey: "avatar_large") as? String
+        screen_name = aDecoder.decodeObject(forKey: "screen_name") as? String
+    }
+
 }

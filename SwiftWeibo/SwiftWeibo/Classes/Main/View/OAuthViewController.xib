@@ -17,15 +17,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-7T-hLb">
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="1YA-7T-hLb" secondAttribute="trailing" id="0FR-WX-j9D"/>
-                <constraint firstAttribute="bottom" secondItem="1YA-7T-hLb" secondAttribute="bottom" id="7iS-h3-vmx"/>
-                <constraint firstItem="1YA-7T-hLb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uHe-6E-o3x"/>
-                <constraint firstItem="1YA-7T-hLb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wlL-LQ-AYk"/>
+                <constraint firstItem="1YA-7T-hLb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2fO-i3-99k"/>
+                <constraint firstItem="1YA-7T-hLb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c4c-f2-7Lo"/>
+                <constraint firstAttribute="trailing" secondItem="1YA-7T-hLb" secondAttribute="trailing" id="jns-hk-yc4"/>
+                <constraint firstAttribute="bottom" secondItem="1YA-7T-hLb" secondAttribute="bottom" id="tuj-vC-slW"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>

@@ -14,6 +14,9 @@
 		290B8D4E1DC873CF00A85D99 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D4D1DC873CF00A85D99 /* UserAccount.swift */; };
 		294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */; };
 		294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */; };
+		2953A55C1DCAC38400E1075C /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A55B1DCAC38400E1075C /* UserAccountViewModel.swift */; };
+		2953A55F1DCAC78800E1075C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A55D1DCAC78800E1075C /* WelcomeViewController.swift */; };
+		2953A5601DCAC78800E1075C /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2953A55E1DCAC78800E1075C /* WelcomeViewController.xib */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -41,6 +44,9 @@
 		290B8D4D1DC873CF00A85D99 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAccount.swift; path = SwiftWeibo/Classes/Others/UserAccount.swift; sourceTree = SOURCE_ROOT; };
 		294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPresentationController.swift; sourceTree = "<group>"; };
 		294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPopoverAnimator.swift; sourceTree = "<group>"; };
+		2953A55B1DCAC38400E1075C /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAccountViewModel.swift; path = SwiftWeibo/Classes/Others/UserAccountViewModel.swift; sourceTree = SOURCE_ROOT; };
+		2953A55D1DCAC78800E1075C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2953A55E1DCAC78800E1075C /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				290B8D4D1DC873CF00A85D99 /* UserAccount.swift */,
+				2953A55B1DCAC38400E1075C /* UserAccountViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +235,8 @@
 				29DC90071DC6203900527751 /* VisitorView.xib */,
 				290B8D471DC84A2F00A85D99 /* OAuthViewController.swift */,
 				290B8D481DC84A2F00A85D99 /* OAuthViewController.xib */,
+				2953A55D1DCAC78800E1075C /* WelcomeViewController.swift */,
+				2953A55E1DCAC78800E1075C /* WelcomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 				29DB4A861DC322AA003E1E2A /* MainVCSettings.json in Resources */,
 				29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */,
 				29DC90081DC6203900527751 /* VisitorView.xib in Resources */,
+				2953A5601DCAC78800E1075C /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +465,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -466,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */,
+				2953A55C1DCAC38400E1075C /* UserAccountViewModel.swift in Sources */,
 				294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */,
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
@@ -482,6 +493,7 @@
 				290B8D4C1DC867C400A85D99 /* Const.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
 				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
+				2953A55F1DCAC78800E1075C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
