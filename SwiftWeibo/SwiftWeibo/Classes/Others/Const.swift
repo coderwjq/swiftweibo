@@ -14,10 +14,13 @@ let app_secret = "46e7fcb01fcd8f488e7b72a86222cc5d"
 let redirect_uri = "http://www.baidu.com"
 
 /// 新浪微博请求授权的页面
-let url_oauth_page = "https://open.weibo.com/oauth2/authorize"
+let url_oauth_page = "https://api.weibo.com/oauth2/authorize"
 
 /// 新浪微博请求AccessToken的url
 let url_request_access_token = "https://api.weibo.com/oauth2/access_token"
 
 /// 新浪微博请求用户信息的url
 let url_request_user_info = "https://api.weibo.com/2/users/show.json"
+
+/// 新浪微博请求首页数据的url
+let url_request_homepage = "https://api.weibo.com/2/statuses/home_timeline.json"

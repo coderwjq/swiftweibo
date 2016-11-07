@@ -14,9 +14,20 @@
 		290B8D4E1DC873CF00A85D99 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B8D4D1DC873CF00A85D99 /* UserAccount.swift */; };
 		294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */; };
 		294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */; };
+		294727851DD032A9008AD618 /* PicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294727841DD032A9008AD618 /* PicCollectionView.swift */; };
+		294727881DD05394008AD618 /* PicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294727861DD05394008AD618 /* PicCollectionViewCell.swift */; };
+		294727891DD05394008AD618 /* PicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294727871DD05394008AD618 /* PicCollectionViewCell.xib */; };
+		2947278D1DD0BF35008AD618 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947278B1DD0BF35008AD618 /* ComposeViewController.swift */; };
+		2947278E1DD0BF35008AD618 /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2947278C1DD0BF35008AD618 /* ComposeViewController.xib */; };
+		294727901DD0C0AF008AD618 /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947278F1DD0C0AF008AD618 /* ComposeTextView.swift */; };
+		294727921DD0C0CB008AD618 /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294727911DD0C0CB008AD618 /* ComposeTitleView.swift */; };
 		2953A55C1DCAC38400E1075C /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A55B1DCAC38400E1075C /* UserAccountViewModel.swift */; };
 		2953A55F1DCAC78800E1075C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A55D1DCAC78800E1075C /* WelcomeViewController.swift */; };
 		2953A5601DCAC78800E1075C /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2953A55E1DCAC78800E1075C /* WelcomeViewController.xib */; };
+		2953A5621DCB5B4000E1075C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A5611DCB5B4000E1075C /* Status.swift */; };
+		2953A5641DCB5B4C00E1075C /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A5631DCB5B4C00E1075C /* StatusViewModel.swift */; };
+		2953A5661DCB5B5700E1075C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A5651DCB5B5700E1075C /* User.swift */; };
+		2953A5681DCB642400E1075C /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A5671DCB642400E1075C /* Date-Extension.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -32,6 +43,8 @@
 		29DC900F1DC632D600527751 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DC900E1DC632D600527751 /* TitleButton.swift */; };
 		29DC90121DC635ED00527751 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DC90101DC635ED00527751 /* PopoverViewController.swift */; };
 		29DC90131DC635ED00527751 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DC90111DC635ED00527751 /* PopoverViewController.xib */; };
+		29F3F68F1DCC157C00100A1F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3F68D1DCC157C00100A1F /* HomeTableViewCell.swift */; };
+		29F3F6901DCC157C00100A1F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F3F68E1DCC157C00100A1F /* HomeTableViewCell.xib */; };
 		DC028321FE50586FBE9FD864 /* Pods_SwiftWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D0D1CFBAEED4BCFD70B0D /* Pods_SwiftWeibo.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,9 +57,20 @@
 		290B8D4D1DC873CF00A85D99 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAccount.swift; path = SwiftWeibo/Classes/Others/UserAccount.swift; sourceTree = SOURCE_ROOT; };
 		294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPresentationController.swift; sourceTree = "<group>"; };
 		294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPopoverAnimator.swift; sourceTree = "<group>"; };
+		294727841DD032A9008AD618 /* PicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionView.swift; sourceTree = "<group>"; };
+		294727861DD05394008AD618 /* PicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionViewCell.swift; sourceTree = "<group>"; };
+		294727871DD05394008AD618 /* PicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicCollectionViewCell.xib; sourceTree = "<group>"; };
+		2947278B1DD0BF35008AD618 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		2947278C1DD0BF35008AD618 /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
+		2947278F1DD0C0AF008AD618 /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		294727911DD0C0CB008AD618 /* ComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
 		2953A55B1DCAC38400E1075C /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAccountViewModel.swift; path = SwiftWeibo/Classes/Others/UserAccountViewModel.swift; sourceTree = SOURCE_ROOT; };
 		2953A55D1DCAC78800E1075C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2953A55E1DCAC78800E1075C /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		2953A5611DCB5B4000E1075C /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Status.swift; path = SwiftWeibo/Classes/Main/View/Status.swift; sourceTree = SOURCE_ROOT; };
+		2953A5631DCB5B4C00E1075C /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewModel.swift; path = SwiftWeibo/Classes/Main/View/StatusViewModel.swift; sourceTree = SOURCE_ROOT; };
+		2953A5651DCB5B5700E1075C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SwiftWeibo/Classes/Main/View/User.swift; sourceTree = SOURCE_ROOT; };
+		2953A5671DCB642400E1075C /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +88,8 @@
 		29DC900E1DC632D600527751 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		29DC90101DC635ED00527751 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		29DC90111DC635ED00527751 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopoverViewController.xib; path = ../Controller/PopoverViewController.xib; sourceTree = "<group>"; };
+		29F3F68D1DCC157C00100A1F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		29F3F68E1DCC157C00100A1F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		CD52E59BFA1F9DDDD7228E5F /* Pods-SwiftWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftWeibo/Pods-SwiftWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		E41D0D1CFBAEED4BCFD70B0D /* Pods_SwiftWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +113,17 @@
 				22119D56AF1D3191555F4BA9 /* Pods-SwiftWeibo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2947278A1DD0BF17008AD618 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				2947278B1DD0BF35008AD618 /* ComposeViewController.swift */,
+				2947278C1DD0BF35008AD618 /* ComposeViewController.xib */,
+				2947278F1DD0C0AF008AD618 /* ComposeTextView.swift */,
+				294727911DD0C0CB008AD618 /* ComposeTitleView.swift */,
+			);
+			path = Compose;
 			sourceTree = "<group>";
 		};
 		29DB4A471DC2EC0F003E1E2A = {
@@ -122,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				29DB4A6E1DC2EF23003E1E2A /* Main */,
+				2947278A1DD0BF17008AD618 /* Compose */,
 				29DB4A6A1DC2EF23003E1E2A /* Home */,
 				29DB4A721DC2EF23003E1E2A /* Message */,
 				29DB4A661DC2EF23003E1E2A /* Discover */,
@@ -186,6 +224,9 @@
 		29DB4A6C1DC2EF23003E1E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2953A5611DCB5B4000E1075C /* Status.swift */,
+				2953A5631DCB5B4C00E1075C /* StatusViewModel.swift */,
+				2953A5651DCB5B5700E1075C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +236,11 @@
 			children = (
 				29DC90111DC635ED00527751 /* PopoverViewController.xib */,
 				294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */,
+				29F3F68D1DCC157C00100A1F /* HomeTableViewCell.swift */,
+				29F3F68E1DCC157C00100A1F /* HomeTableViewCell.xib */,
+				294727841DD032A9008AD618 /* PicCollectionView.swift */,
+				294727861DD05394008AD618 /* PicCollectionViewCell.swift */,
+				294727871DD05394008AD618 /* PicCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				29DC900C1DC6314A00527751 /* UIBarButtonItem-Extension.swift */,
+				2953A5671DCB642400E1075C /* Date-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -412,9 +459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				290B8D4A1DC84A2F00A85D99 /* OAuthViewController.xib in Resources */,
+				2947278E1DD0BF35008AD618 /* ComposeViewController.xib in Resources */,
+				29F3F6901DCC157C00100A1F /* HomeTableViewCell.xib in Resources */,
 				29DC90131DC635ED00527751 /* PopoverViewController.xib in Resources */,
 				29DB4A861DC322AA003E1E2A /* MainVCSettings.json in Resources */,
 				29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */,
+				294727891DD05394008AD618 /* PicCollectionViewCell.xib in Resources */,
 				29DC90081DC6203900527751 /* VisitorView.xib in Resources */,
 				2953A5601DCAC78800E1075C /* WelcomeViewController.xib in Resources */,
 			);
@@ -475,20 +525,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294727851DD032A9008AD618 /* PicCollectionView.swift in Sources */,
+				294727881DD05394008AD618 /* PicCollectionViewCell.swift in Sources */,
 				290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */,
+				2953A5641DCB5B4C00E1075C /* StatusViewModel.swift in Sources */,
 				2953A55C1DCAC38400E1075C /* UserAccountViewModel.swift in Sources */,
 				294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */,
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
+				2953A5681DCB642400E1075C /* Date-Extension.swift in Sources */,
+				29F3F68F1DCC157C00100A1F /* HomeTableViewCell.swift in Sources */,
+				2947278D1DD0BF35008AD618 /* ComposeViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
 				290B8D491DC84A2F00A85D99 /* OAuthViewController.swift in Sources */,
 				29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */,
+				294727921DD0C0CB008AD618 /* ComposeTitleView.swift in Sources */,
 				29DB4A7F1DC2FB4D003E1E2A /* MessageViewController.swift in Sources */,
 				29DB4A7D1DC2FB40003E1E2A /* HomeViewController.swift in Sources */,
+				2953A5661DCB5B5700E1075C /* User.swift in Sources */,
 				290B8D4E1DC873CF00A85D99 /* UserAccount.swift in Sources */,
 				29DC90041DC61F5900527751 /* BaseViewController.swift in Sources */,
+				2953A5621DCB5B4000E1075C /* Status.swift in Sources */,
 				29DB4A811DC2FB5A003E1E2A /* DiscoverViewController.swift in Sources */,
 				29DC90121DC635ED00527751 /* PopoverViewController.swift in Sources */,
 				29DC90061DC61FB900527751 /* VisitorView.swift in Sources */,
+				294727901DD0C0AF008AD618 /* ComposeTextView.swift in Sources */,
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
 				290B8D4C1DC867C400A85D99 /* Const.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,

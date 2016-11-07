@@ -16,11 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var defaultViewController: UIViewController? {
         let isLogin = UserAccountViewModel.sharedInstance.isLogin
         
-        if isLogin {
-            return WelcomeViewController()
-        } else {
-            return MainViewController()
-        }
+        return isLogin ? WelcomeViewController() : MainViewController()
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -35,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // 设置window的根控制器
-        window?.rootViewController = WelcomeViewController()
-        
+        window?.rootViewController = MainViewController()
+
         // 设置window为可见
         window?.makeKeyAndVisible()
         

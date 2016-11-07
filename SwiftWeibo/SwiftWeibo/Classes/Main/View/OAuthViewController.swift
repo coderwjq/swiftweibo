@@ -40,14 +40,13 @@ extension OAuthViewController {
     }
     
     fileprivate func loadPage() {
+        print("开始加载页面")
         // 获取登录页的URLString
         let urlString = "\(url_oauth_page)?client_id=\(app_key)&redirect_url=\(redirect_uri)"
         
-        print(urlString)
-        
         // 创建对应的URL
         guard let url = URL(string: urlString) else {
-            print("创建NSUrl失败")
+            print("创建URL失败")
             return
         }
         
@@ -67,8 +66,8 @@ extension OAuthViewController {
     
     @objc fileprivate func fillItemClick() {
         // 书写js代码
-        var jsCode = "document.getElementById('userId').value='coderwjq@126.com';"
-        jsCode += "document.getElementById('passwd').value='password';"
+        var jsCode = "document.getElementById('userId').value='上当了吧';"
+        jsCode += "document.getElementById('passwd').value='受骗了吧';"
         
         // 执行js代码
         webView.stringByEvaluatingJavaScript(from: jsCode)
@@ -115,7 +114,7 @@ extension OAuthViewController: UIWebViewDelegate {
         loadAccessToken(code: code)
         
         // 不再加载剩余页面
-        return false
+        return true
     }
 }
 

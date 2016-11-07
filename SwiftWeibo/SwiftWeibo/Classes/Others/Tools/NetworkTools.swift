@@ -84,3 +84,28 @@ extension NetworkTools {
         }
     }
 }
+
+// MARK:- 请求首页数据
+extension NetworkTools {
+    func loadStatuses(since_id: Int, max_id: Int, finished: @escaping (_ result: Any?, _ error: Error?) -> ()) {
+        
+        guard let accessToken = UserAccountViewModel.sharedInstance.account?.access_token else {
+            return
+        }
+        
+        // 获取请求参数
+        let parameters = ["access_token": accessToken, "since_id": "\(since_id)", "max_id": "\(max_id)"]
+        
+        // 发送网络请求
+        request(methodType: .POST, URLString: url_request_homepage, parameters: parameters) { (result, error) in
+            // 获取字典中的数据
+            guard let resultDict = result as? [String : AnyObject] else{
+                finished(nil, error)
+                return
+            }
+            
+            // 将数组数据回调给外界控制器
+            finished(resultDict["statuses"] as? [[String : AnyObject]], error)
+        }
+    }
+}
