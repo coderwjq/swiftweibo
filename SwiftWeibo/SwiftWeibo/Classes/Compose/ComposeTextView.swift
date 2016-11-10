@@ -11,7 +11,7 @@ import UIKit
 class ComposeTextView: UITextView {
 
     // MARK:- 懒加载属性
-    fileprivate lazy var placeHolderLabel: UILabel = UILabel()
+    lazy var placeHolderLabel: UILabel = UILabel()
     
     // MARK:- 构造函数
     required init?(coder aDecoder: NSCoder) {

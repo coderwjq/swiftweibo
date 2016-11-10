@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // 设置window的根控制器
-        window?.rootViewController = MainViewController()
+        window?.rootViewController = ComposeViewController()
 
         // 设置window为可见
         window?.makeKeyAndVisible()

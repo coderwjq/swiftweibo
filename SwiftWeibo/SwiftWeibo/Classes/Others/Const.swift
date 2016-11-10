@@ -24,3 +24,7 @@ let url_request_user_info = "https://api.weibo.com/2/users/show.json"
 
 /// 新浪微博请求首页数据的url
 let url_request_homepage = "https://api.weibo.com/2/statuses/home_timeline.json"
+
+// MARK:- 选择照片的通知常量
+let PicPickerAddPhotoNote = "PicPickerAddPhotoNote"
+let PicPickerRemovePhotoNote = "PicPickerRemovePhotoNote"
