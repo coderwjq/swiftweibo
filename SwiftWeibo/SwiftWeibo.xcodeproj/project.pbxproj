@@ -18,6 +18,10 @@
 		292643C01DD3F91A00206993 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 292643BF1DD3F91A00206993 /* Emoticons.bundle */; };
 		292643C31DD3FBBE00206993 /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643C21DD3FBBE00206993 /* EmoticonController.swift */; };
 		292643C51DD3FBEB00206993 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643C41DD3FBEB00206993 /* EmoticonViewCell.swift */; };
+		292643C71DD3FD3100206993 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643C61DD3FD3100206993 /* EmoticonManager.swift */; };
+		292643C91DD3FD3F00206993 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643C81DD3FD3F00206993 /* EmoticonPackage.swift */; };
+		292643CB1DD3FD4A00206993 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643CA1DD3FD4A00206993 /* Emoticon.swift */; };
+		292643CD1DD408B700206993 /* EmoticonCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292643CC1DD408B700206993 /* EmoticonCollectionViewLayout.swift */; };
 		294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */; };
 		294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */; };
 		294727851DD032A9008AD618 /* PicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294727841DD032A9008AD618 /* PicCollectionView.swift */; };
@@ -67,6 +71,10 @@
 		292643BF1DD3F91A00206993 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
 		292643C21DD3FBBE00206993 /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
 		292643C41DD3FBEB00206993 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		292643C61DD3FD3100206993 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmoticonManager.swift; path = SwiftWeibo/Classes/Compose/Emoticon/EmoticonManager.swift; sourceTree = SOURCE_ROOT; };
+		292643C81DD3FD3F00206993 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmoticonPackage.swift; path = SwiftWeibo/Classes/Compose/Emoticon/EmoticonPackage.swift; sourceTree = SOURCE_ROOT; };
+		292643CA1DD3FD4A00206993 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Emoticon.swift; path = SwiftWeibo/Classes/Compose/Emoticon/Emoticon.swift; sourceTree = SOURCE_ROOT; };
+		292643CC1DD408B700206993 /* EmoticonCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonCollectionViewLayout.swift; sourceTree = "<group>"; };
 		294420C01DC6E5FA0045C4AB /* WJQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPresentationController.swift; sourceTree = "<group>"; };
 		294420C21DC6E85B0045C4AB /* WJQPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJQPopoverAnimator.swift; sourceTree = "<group>"; };
 		294727841DD032A9008AD618 /* PicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionView.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 				292643C11DD3FB9100206993 /* Model */,
 				292643C21DD3FBBE00206993 /* EmoticonController.swift */,
 				292643C41DD3FBEB00206993 /* EmoticonViewCell.swift */,
+				292643CC1DD408B700206993 /* EmoticonCollectionViewLayout.swift */,
 			);
 			path = Emoticon;
 			sourceTree = "<group>";
@@ -151,6 +160,9 @@
 		292643C11DD3FB9100206993 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				292643C61DD3FD3100206993 /* EmoticonManager.swift */,
+				292643C81DD3FD3F00206993 /* EmoticonPackage.swift */,
+				292643CA1DD3FD4A00206993 /* Emoticon.swift */,
 			);
 			name = Model;
 			path = Emoticons.bundle/Model;
@@ -572,13 +584,16 @@
 			files = (
 				294727851DD032A9008AD618 /* PicCollectionView.swift in Sources */,
 				294727881DD05394008AD618 /* PicCollectionViewCell.swift in Sources */,
+				292643C91DD3FD3F00206993 /* EmoticonPackage.swift in Sources */,
 				290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */,
 				2953A5641DCB5B4C00E1075C /* StatusViewModel.swift in Sources */,
 				2953A55C1DCAC38400E1075C /* UserAccountViewModel.swift in Sources */,
 				294420C11DC6E5FA0045C4AB /* WJQPresentationController.swift in Sources */,
+				292643CD1DD408B700206993 /* EmoticonCollectionViewLayout.swift in Sources */,
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
 				2953A5681DCB642400E1075C /* Date-Extension.swift in Sources */,
 				29F3F68F1DCC157C00100A1F /* HomeTableViewCell.swift in Sources */,
+				292643C71DD3FD3100206993 /* EmoticonManager.swift in Sources */,
 				2947278D1DD0BF35008AD618 /* ComposeViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
 				290B8D491DC84A2F00A85D99 /* OAuthViewController.swift in Sources */,
@@ -599,6 +614,7 @@
 				29DC90061DC61FB900527751 /* VisitorView.swift in Sources */,
 				294727901DD0C0AF008AD618 /* ComposeTextView.swift in Sources */,
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
+				292643CB1DD3FD4A00206993 /* Emoticon.swift in Sources */,
 				290B8D4C1DC867C400A85D99 /* Const.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
 				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
