@@ -42,6 +42,12 @@
 		29D012AE1DD5A13B00FBAAE5 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */; };
 		29D012B01DD5AC6200FBAAE5 /* HYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */; };
 		29D012B21DD5AFDC00FBAAE5 /* FindEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012B11DD5AFDC00FBAAE5 /* FindEmoticon.swift */; };
+		29D012B51DD5B5EB00FBAAE5 /* PhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012B41DD5B5EB00FBAAE5 /* PhotoBrowserController.swift */; };
+		29D012B71DD5B60E00FBAAE5 /* PhotoBrowserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012B61DD5B60E00FBAAE5 /* PhotoBrowserViewCell.swift */; };
+		29D012B91DD5B61D00FBAAE5 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012B81DD5B61D00FBAAE5 /* ProgressView.swift */; };
+		29D012BB1DD5B64800FBAAE5 /* PhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012BA1DD5B64800FBAAE5 /* PhotoBrowserAnimator.swift */; };
+		29D012BD1DD5C0F100FBAAE5 /* PhotoBrowserCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012BC1DD5C0F100FBAAE5 /* PhotoBrowserCollectionViewLayout.swift */; };
+		29D012C01DD5C34D00FBAAE5 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012BF1DD5C34D00FBAAE5 /* UIButton-Extension.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -99,6 +105,12 @@
 		29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
 		29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLabel.swift; sourceTree = "<group>"; };
 		29D012B11DD5AFDC00FBAAE5 /* FindEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmoticon.swift; sourceTree = "<group>"; };
+		29D012B41DD5B5EB00FBAAE5 /* PhotoBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserController.swift; sourceTree = "<group>"; };
+		29D012B61DD5B60E00FBAAE5 /* PhotoBrowserViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewCell.swift; sourceTree = "<group>"; };
+		29D012B81DD5B61D00FBAAE5 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		29D012BA1DD5B64800FBAAE5 /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
+		29D012BC1DD5C0F100FBAAE5 /* PhotoBrowserCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCollectionViewLayout.swift; sourceTree = "<group>"; };
+		29D012BF1DD5C34D00FBAAE5 /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +212,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		29D012B31DD5B5CC00FBAAE5 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				29D012B41DD5B5EB00FBAAE5 /* PhotoBrowserController.swift */,
+				29D012B61DD5B60E00FBAAE5 /* PhotoBrowserViewCell.swift */,
+				29D012B81DD5B61D00FBAAE5 /* ProgressView.swift */,
+				29D012BA1DD5B64800FBAAE5 /* PhotoBrowserAnimator.swift */,
+				29D012BC1DD5C0F100FBAAE5 /* PhotoBrowserCollectionViewLayout.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
 		29DB4A471DC2EC0F003E1E2A = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +302,7 @@
 		29DB4A6A1DC2EF23003E1E2A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				29D012B31DD5B5CC00FBAAE5 /* PhotoBrowser */,
 				29DB4A6B1DC2EF23003E1E2A /* Controller */,
 				29DB4A6C1DC2EF23003E1E2A /* Model */,
 				29DB4A6D1DC2EF23003E1E2A /* View */,
@@ -448,6 +473,7 @@
 			children = (
 				29DC900C1DC6314A00527751 /* UIBarButtonItem-Extension.swift */,
 				2953A5671DCB642400E1075C /* Date-Extension.swift */,
+				29D012BF1DD5C34D00FBAAE5 /* UIButton-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -614,14 +640,17 @@
 				29DB4A831DC2FB65003E1E2A /* ProfileViewController.swift in Sources */,
 				2953A5681DCB642400E1075C /* Date-Extension.swift in Sources */,
 				29F3F68F1DCC157C00100A1F /* HomeTableViewCell.swift in Sources */,
+				29D012BB1DD5B64800FBAAE5 /* PhotoBrowserAnimator.swift in Sources */,
 				29D012AB1DD59F7800FBAAE5 /* UITextView-Extension.swift in Sources */,
 				292643C71DD3FD3100206993 /* EmoticonManager.swift in Sources */,
 				2947278D1DD0BF35008AD618 /* ComposeViewController.swift in Sources */,
 				29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */,
 				290B8D491DC84A2F00A85D99 /* OAuthViewController.swift in Sources */,
+				29D012B51DD5B5EB00FBAAE5 /* PhotoBrowserController.swift in Sources */,
 				29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */,
 				294727921DD0C0CB008AD618 /* ComposeTitleView.swift in Sources */,
 				292643BD1DD2D92500206993 /* PicPickerCollectionView.swift in Sources */,
+				29D012B91DD5B61D00FBAAE5 /* ProgressView.swift in Sources */,
 				29DB4A7F1DC2FB4D003E1E2A /* MessageViewController.swift in Sources */,
 				29DB4A7D1DC2FB40003E1E2A /* HomeViewController.swift in Sources */,
 				292643C51DD3FBEB00206993 /* EmoticonViewCell.swift in Sources */,
@@ -634,6 +663,8 @@
 				2953A5621DCB5B4000E1075C /* Status.swift in Sources */,
 				29DB4A811DC2FB5A003E1E2A /* DiscoverViewController.swift in Sources */,
 				29DC90121DC635ED00527751 /* PopoverViewController.swift in Sources */,
+				29D012B71DD5B60E00FBAAE5 /* PhotoBrowserViewCell.swift in Sources */,
+				29D012BD1DD5C0F100FBAAE5 /* PhotoBrowserCollectionViewLayout.swift in Sources */,
 				29DC90061DC61FB900527751 /* VisitorView.swift in Sources */,
 				294727901DD0C0AF008AD618 /* ComposeTextView.swift in Sources */,
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
@@ -642,6 +673,7 @@
 				29D012B21DD5AFDC00FBAAE5 /* FindEmoticon.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
 				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
+				29D012C01DD5C34D00FBAAE5 /* UIButton-Extension.swift in Sources */,
 				2953A55F1DCAC78800E1075C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

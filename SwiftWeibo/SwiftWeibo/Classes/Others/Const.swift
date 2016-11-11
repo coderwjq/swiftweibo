@@ -28,3 +28,8 @@ let url_request_homepage = "https://api.weibo.com/2/statuses/home_timeline.json"
 // MARK:- 选择照片的通知常量
 let PicPickerAddPhotoNote = "PicPickerAddPhotoNote"
 let PicPickerRemovePhotoNote = "PicPickerRemovePhotoNote"
+
+// MARK:- 照片浏览器的通知常量
+let ShowPhotoBrowserNote = "ShowPhotoBrowserNote"
+let ShowPhotoBrowserIndexKey = "ShowPhotoBrowserIndexKey"
+let ShowPhotoBrowserUrlsKey = "ShowPhotoBrowserIndexKey"

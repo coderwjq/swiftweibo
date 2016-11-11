@@ -83,7 +83,8 @@ class HomeTableViewCell: UITableViewCell {
                 // 有转发微博
                 // 设置转发微博的正文
                 if let screenName = viewModel.status?.retweeted_status?.user?.screen_name, let retweetedText = viewModel.status?.retweeted_status?.text {
-                    retweetedContentLabel.text = "@" + "\(screenName): " + retweetedText
+                    let retweetedText = "@" + "\(screenName): " + retweetedText
+                    retweetedContentLabel.attributedText = FindEmoticon.sharedInstance.findAttrString(statusText: retweetedText, font: retweetedContentLabel.font)
                     
                     // 设置转发正文距离顶部的约束
                     retweetedContentLabelTopCons.constant = 15
