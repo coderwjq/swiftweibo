@@ -41,6 +41,7 @@
 		29D012AB1DD59F7800FBAAE5 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AA1DD59F7800FBAAE5 /* UITextView-Extension.swift */; };
 		29D012AE1DD5A13B00FBAAE5 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */; };
 		29D012B01DD5AC6200FBAAE5 /* HYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */; };
+		29D012B21DD5AFDC00FBAAE5 /* FindEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012B11DD5AFDC00FBAAE5 /* FindEmoticon.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -97,6 +98,7 @@
 		29D012AA1DD59F7800FBAAE5 /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextView-Extension.swift"; path = "../../../Others/Category/UITextView-Extension.swift"; sourceTree = "<group>"; };
 		29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
 		29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLabel.swift; sourceTree = "<group>"; };
+		29D012B11DD5AFDC00FBAAE5 /* FindEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmoticon.swift; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				292643C41DD3FBEB00206993 /* EmoticonViewCell.swift */,
 				292643CC1DD408B700206993 /* EmoticonCollectionViewLayout.swift */,
 				29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */,
+				29D012B11DD5AFDC00FBAAE5 /* FindEmoticon.swift */,
 			);
 			path = Emoticon;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				29DC900F1DC632D600527751 /* TitleButton.swift in Sources */,
 				292643CB1DD3FD4A00206993 /* Emoticon.swift in Sources */,
 				290B8D4C1DC867C400A85D99 /* Const.swift in Sources */,
+				29D012B21DD5AFDC00FBAAE5 /* FindEmoticon.swift in Sources */,
 				29DC900D1DC6314A00527751 /* UIBarButtonItem-Extension.swift in Sources */,
 				294420C31DC6E85B0045C4AB /* WJQPopoverAnimator.swift in Sources */,
 				2953A55F1DCAC78800E1075C /* WelcomeViewController.swift in Sources */,

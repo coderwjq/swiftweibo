@@ -256,14 +256,14 @@ extension HomeViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell") as! HomeTableViewCell
         
         // 给cell设置数据
-        cell.viewModel = viewModels[(indexPath as NSIndexPath).row]
+        cell.viewModel = viewModels[indexPath.row]
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // 获取模型对象
-        let viewModel = viewModels[(indexPath as NSIndexPath).row]
+        let viewModel = viewModels[indexPath.row]
         
         return viewModel.cellHight
     }

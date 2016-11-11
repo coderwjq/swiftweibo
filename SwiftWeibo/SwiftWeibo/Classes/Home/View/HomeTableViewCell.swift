@@ -65,7 +65,7 @@ class HomeTableViewCell: UITableViewCell {
             }
             
             // 设置微博正文
-            contentLabel.text = viewModel.status?.text
+            contentLabel.attributedText = FindEmoticon.sharedInstance.findAttrString(statusText: viewModel.status?.text, font: contentLabel.font)
             
             // 设置昵称的文字颜色
             screenNameLabel.textColor = viewModel.vipImage == nil ? UIColor.black : UIColor.orange
