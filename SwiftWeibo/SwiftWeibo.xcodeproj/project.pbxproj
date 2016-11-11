@@ -40,6 +40,7 @@
 		2953A5681DCB642400E1075C /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953A5671DCB642400E1075C /* Date-Extension.swift */; };
 		29D012AB1DD59F7800FBAAE5 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AA1DD59F7800FBAAE5 /* UITextView-Extension.swift */; };
 		29D012AE1DD5A13B00FBAAE5 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */; };
+		29D012B01DD5AC6200FBAAE5 /* HYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */; };
 		29DB4A541DC2EC0F003E1E2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */; };
 		29DB4A5B1DC2EC0F003E1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */; };
 		29DB4A7B1DC2FB2D003E1E2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB4A7A1DC2FB2D003E1E2A /* MainViewController.swift */; };
@@ -95,6 +96,7 @@
 		2953A5671DCB642400E1075C /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		29D012AA1DD59F7800FBAAE5 /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextView-Extension.swift"; path = "../../../Others/Category/UITextView-Extension.swift"; sourceTree = "<group>"; };
 		29D012AD1DD5A13B00FBAAE5 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
+		29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLabel.swift; sourceTree = "<group>"; };
 		29DB4A501DC2EC0F003E1E2A /* SwiftWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DB4A531DC2EC0F003E1E2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29DB4A5A1DC2EC0F003E1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 		29DC900B1DC6311500527751 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				29D012AF1DD5AC6200FBAAE5 /* HYLabel.swift */,
 				29DC900E1DC632D600527751 /* TitleButton.swift */,
 				290B8D451DC8443F00A85D99 /* NetworkTools.swift */,
 			);
@@ -597,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				294727851DD032A9008AD618 /* PicCollectionView.swift in Sources */,
+				29D012B01DD5AC6200FBAAE5 /* HYLabel.swift in Sources */,
 				294727881DD05394008AD618 /* PicCollectionViewCell.swift in Sources */,
 				292643C91DD3FD3F00206993 /* EmoticonPackage.swift in Sources */,
 				290B8D461DC8443F00A85D99 /* NetworkTools.swift in Sources */,
