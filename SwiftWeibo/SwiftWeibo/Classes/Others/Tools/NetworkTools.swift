@@ -109,3 +109,47 @@ extension NetworkTools {
         }
     }
 }
+
+// MARK:- 发送文字微博
+extension NetworkTools {
+    func sendStatus(statusText: String, isSucess: @escaping (_ isSucess: Bool) -> ()) {
+        // 获取请求的URL
+        let urlString = "https://api.weibo.com/2/statuses/update.json"
+        
+        // 获取请求的参数
+        let parameters = ["access_token": (UserAccountViewModel.sharedInstance.account?.access_token)!, "status": statusText]
+        
+        // 发送网络请求
+        request(methodType: .POST, URLString: urlString, parameters: parameters) { (result, error) in
+            if error != nil {
+                isSucess(true)
+            } else {
+                isSucess(false)
+            }
+        }
+    }
+}
+
+// MARK:- 发送带图片的微博
+extension NetworkTools {
+    func sendStatus(statusText: String, image: UIImage,  isSucess: @escaping (_ isSucess: Bool) -> ()) {
+        // 1.获取请求的URLString
+        let urlString = "https://api.weibo.com/2/statuses/upload.json"
+        
+        // 2.获取请求的参数
+        let parameters = ["access_token" : (UserAccountViewModel.sharedInstance.account?.access_token)!, "status" : statusText]
+        
+        // 发送网络请求
+        post(urlString, parameters: parameters, constructingBodyWith: { (formData) in
+            
+            if let imageData = UIImageJPEGRepresentation(image, 0.5) {
+                formData.appendPart(withFileData: imageData, name: "pic", fileName: "upload.png", mimeType: "image/png")
+            }
+            
+            }, progress: nil, success: { (_, _) in
+                isSucess(true)
+            }) { (_, error) in
+                print(error)
+        }
+    }
+}

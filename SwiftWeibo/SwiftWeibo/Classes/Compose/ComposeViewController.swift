@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ComposeViewController: UIViewController {
     // MARK:- 控件的属性
@@ -16,7 +17,10 @@ class ComposeViewController: UIViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var titleView: ComposeTitleView = ComposeTitleView()
     fileprivate lazy var images: [UIImage] = [UIImage]()
-    fileprivate lazy var emoticonVc: EmoticonController = EmoticonController()
+    fileprivate lazy var emoticonVc: EmoticonController = EmoticonController {[weak self] (emoticon) in
+        self?.textView.insertEmoticon(emoticon: emoticon)
+        self?.textViewDidChange(self!.textView)
+    }
 
     // MARK:- 约束的属性
     @IBOutlet weak var toolBarBottomCons: NSLayoutConstraint!
@@ -81,7 +85,28 @@ extension ComposeViewController {
     }
     
     @objc fileprivate func sendItemClick() {
-        print("sendItemClick")
+        // 键盘退出
+        textView.resignFirstResponder()
+        
+        // 获取要发送的微博正文
+        let statusText = textView.getEmoticonString()
+        
+        // 定义回调的闭包
+        let finishedCallback = { (isSucess: Bool) -> () in
+            if !isSucess {
+                SVProgressHUD.showError(withStatus: "发送微博失败")
+            }
+            
+            SVProgressHUD.showSuccess(withStatus: "发送微博成功")
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        // 获取用户选中的图片
+        if let image = images.first {
+            NetworkTools.sharedInstance.sendStatus(statusText: statusText, image: image, isSucess: finishedCallback)
+        } else {
+            NetworkTools.sharedInstance.sendStatus(statusText: statusText, isSucess: finishedCallback)
+        }
     }
     
     @objc fileprivate func keyboardWillChangeFrame(note: Notification) {

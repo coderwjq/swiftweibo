@@ -12,11 +12,27 @@ import UIKit
 private let EmoticonCell = "EmoticonCell"
 
 class EmoticonController: UIViewController {
+    // MARK:- 定义属性
+    var emoticonCallBack: (_ emoticon: Emoticon) -> ()
     
     // MARK:- 懒加载属性
     fileprivate lazy var collectionView: UICollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: EmoticonCollectionViewLayout())
     fileprivate lazy var toolBar: UIToolbar = UIToolbar()
     fileprivate lazy var manager = EmoticonManager()
+    
+    // MARK:- 自定义构造函数
+    init(emoticonCallBack: @escaping (_ emoticon: Emoticon) ->() ) {
+        // 必须在初始化之前给emoticonCallBack赋初值
+        self.emoticonCallBack = emoticonCallBack
+        
+        // 在自定义ViewController的init()方法时,要先调用父类的init(nibName:Bundle:)方法
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    // 重写init()方法必须也要重写init(coder)方法
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -139,6 +155,9 @@ extension EmoticonController: UICollectionViewDelegate {
         
         // 将点击的表情插入最近分组
         insertRecentlyEmoticon(emoticon: emoticon)
+        
+        // 将表情回调给外界控制器
+        emoticonCallBack(emoticon)
     }
     
     fileprivate func insertRecentlyEmoticon(emoticon: Emoticon) {
